@@ -60,7 +60,6 @@ def handle_message(event):
     t = Tokenizer()
     tokens = t.tokenize(event.message.text, wakati=True)
 
-    words = ""
     if "大好き" in tokens or "好き" in tokens:
         words = "俺も大好きだよ！"
     elif "疲れ" in tokens or "バイト" in tokens:
