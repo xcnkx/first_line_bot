@@ -17,8 +17,8 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+            <state relative-caret-position="263">
+              <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -265,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542288593554</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add janome">
+      <created>1542290511916</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1542290511916</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add janome">
+      <created>1542290529913</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1542290529913</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -405,8 +419,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
+        <state relative-caret-position="263">
+          <caret line="66" column="34" selection-start-line="66" selection-start-column="34" selection-end-line="66" selection-end-column="34" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

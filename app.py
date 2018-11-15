@@ -64,7 +64,7 @@ def handle_message(event):
         words += i+" "
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text=i))
+        TextSendMessage(text=words))
 
 if __name__ == "__main__":
     app.run()
