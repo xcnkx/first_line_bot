@@ -59,9 +59,9 @@ def handle_message(event):
     t = Tokenizer()
     tokens = t.tokenize(event.message.text, wakati=True)
 
-    words = []
+    words = ""
     for i in tokens:
-        words.append(i+" ")
+        words += i+""
 
     line_bot_api.reply_message(
         event.reply_token,
