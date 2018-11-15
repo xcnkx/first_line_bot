@@ -61,7 +61,7 @@ def handle_message(event):
 
     words = []
     for i in tokens:
-    words += i+" "
+        words += i+" "
     line_bot_api.reply_message(
         event.reply_token,
         TextSendMessage(text=i))
