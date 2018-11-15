@@ -1,6 +1,7 @@
 import os
 import sys
 from flask import Flask, request, abort
+from janome.tokenizer import Tokenizer
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -49,11 +50,22 @@ def callback():
 
     return 'OK'
 
+
+messages = ["頑張れ七海！！","ななみのこと大好きだよ！","応援してるよ！ななみ！","ななみ起きろよー！！","一緒に仕事頑張ろう！","えっちしたい"]
+
+
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
+    t = Tokenizer()
+    tokens = t.tokenize(event.message.text, wakati=True)
+    words = ""
+
+    for i in tokens:
+        words += i
+
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text="がんばれ！！七海！！大好きだよ"))
+        TextSendMessage(text=words))
 
 if __name__ == "__main__":
     app.run()
