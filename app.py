@@ -2,6 +2,7 @@ import os
 import sys
 from flask import Flask, request, abort
 from janome.tokenizer import Tokenizer
+import random
 
 from linebot import (
     LineBotApi, WebhookHandler
@@ -60,8 +61,16 @@ def handle_message(event):
     tokens = t.tokenize(event.message.text, wakati=True)
 
     words = ""
-    for i in tokens:
-        words += i+" "
+    if "大好き" in tokens or "好き" in tokens:
+        words = "俺も大好きだよ！"
+    elif "疲れ" in tokens or "バイト" in tokens:
+        words = "七海おつかれ！"
+    elif "えっち" in tokens or "会い" in tokens:
+        words = messages[5]
+    elif "眠い" in tokens or "ねむい" in tokens:
+        words = messages[3]
+    else:
+        words = messages[random.randint(0, 2)]
 
     line_bot_api.reply_message(
         event.reply_token,
